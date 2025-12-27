@@ -42,3 +42,13 @@ $$ | \$$ |\$$$$$$$\  \$$$$  |\$$$$$\$$$$  |\$$$$$$  |$$ |      $$ | \$$\       \
 
 <code>sudo python3 network_scanner.py -t 192.168.137.2 </code><br>
 <code>sudo python3 network_scanner.py --target 192.168.137.1/24</code>
+
+### Output -->
+
+<code>IP                      MAC_Address
+<code>------------------------------------------
+<code>192.168.1.1             00:1a:2b:3c:4d:5e
+<code>192.168.1.3             08:00:27:ab:cd:ef
+<code>192.168.1.5             dc:a6:32:11:22:33
+<code>192.168.1.10            3c:52:82:aa:bb:cc
+
