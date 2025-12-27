@@ -34,8 +34,7 @@ $$ | \$$ |\$$$$$$$\  \$$$$  |\$$$$$\$$$$  |\$$$$$$  |$$ |      $$ | \$$\       \
 
 ## How to use?
 
-<code>
-USE --help for help menu (sudo python3 network_scanner.py --help)</code>
+<code>USE --help for help menu (sudo python3 network_scanner.py --help)</code>
 
 
 
