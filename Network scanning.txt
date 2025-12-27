@@ -1,2 +1,61 @@
 network scanning:-
 
+
+1. Purpose of the program
+This program scans a local network to find all active devices and displays their IP addresses and MAC addresses.
+
+
+2. ASCII banner
+The large text at the beginning is only for display and author credit. It does not affect how the program works.
+
+
+3. Importing libraries
+
+scapy: Used for creating and sending network packets.
+
+argparse: Used to read IP addresses or ranges from the command line.
+
+
+
+4. Command-line arguments (get_arguments)
+This function asks the user to enter a target IP address or IP range using -t or --target.
+If no IP is provided, the program shows an error message.
+
+
+5. ARP request creation
+The program creates an ARP request to ask devices on the network, “Who has this IP address?”
+
+
+6. Broadcast frame
+The ARP request is wrapped inside an Ethernet frame and broadcast to all devices using the MAC address ff:ff:ff:ff:ff:ff.
+
+
+7. Sending and receiving packets (scan)
+The program sends the broadcast ARP packet and waits for replies from devices that are active on the network.
+
+
+8. Collecting responses
+Each responding device sends back its IP address and MAC address, which the program stores in a list.
+
+
+9. Data storage
+The IP and MAC addresses are saved in dictionary format for easy handling.
+
+
+10. Displaying results (print_result)
+The program prints all discovered IP and MAC addresses in a neat table format.
+
+
+11. Main execution
+The program:
+
+Reads the target IP
+
+Scans the network
+
+Displays the connected devices
+
+
+
+12. Final outcome
+The user gets a clear list of all devices connected to the local network.
